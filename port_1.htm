@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>my port</title>
+    <link rel = "icon" href = "my_port_icon.png" type = "image/x-icon">
+    <style media="screen">
+      body{
+        margin: 0px;
+        padding : 0px;
+        background: #212121;
+      }
+      .header{
+        height: 100px;
+        background: black;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: absolute;
+      }
+      .in-head{
+        background: white;
+        height: 60px;
+        width: 60px;
+        top: 20px;
+        position: relative;
+        left: 20px;
+        border-radius: 25%;
+      }
+      .in-in-head{
+        background: black;
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        position: relative;
+        top: 10px;
+        left: 10px;
+      }
+      .right-head{
+        background: black;
+        height: 50px;
+        width: auto;
+        position: relative;
+        font-size: 50px;
+        color: white;
+        font-family: verdana;
+        font-weight: bold;
+        display: block;
+        top: 15px;
+        left: 40px;
+      }
+      .main{
+        background: #212121;
+        width: 30%;
+        height: 660px;
+        display: flex;
+        position: fixed;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        top: 100px;
+      }
+      .in-main{
+        background: #C5C6D0;
+        width: 300px;
+        height: 600px;
+        position: fixed;
+        border-radius: 25px;
+        border: 3px solid black;
+      }
+      .left-main{
+        height: 660px;
+        width:70%;
+        background: #212121;
+        position: absolute;
+        top: 100px;
+        left: 30%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      .in-left-main{
+        height: 600px;
+        width: 90%;
+        background: #C5C6D0;
+        position: relative;
+        top: 30px;
+        border-radius: 25px;
+        left: 20px;
+        overflow: auto;
+        font-size: 30px;
+        text-align: justify;
+        border: 3px solid black;
+      }
+      .nav-items{
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: monospace;
+        border: 3px solid black;
+        border-radius: 10px;
+      }
+      .nav-items:hover{
+        background: white;
+      }
+      .nav-items:focus{
+        background: white;
+      }
+      .nav-items:active{
+        background: white;
+      }
+      #home{
+        text-align: center;
+        top: 130px;
+        position: relative;
+        font-size: 150px;
+        color: black;
+        font-family: verdana;
+      }
+      #personal_info{
+        position: relative;
+        font-size: 25px;
+        font-family: verdana;
+        padding: 30px;
+        letter-spacing: 1px;
+      }
+      #education{
+        position: relative;
+        font-size: 25px;
+        font-family: verdana;
+        padding: 30px;
+      }
+      #projects{
+        position: relative;
+        font-size: 25px;
+        font-family: verdana;
+        padding: 30px;
+      }
+      #expericene{
+        position: relative;
+        font-size: 25px;
+        font-family: verdana;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="in-head">
+        <div class="in-in-head">
+
+        </div>
+      </div>
+      <div class="right-head">
+        my port
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="in-main">
+        <a style="top:30px; left:30px; position: relative; padding-left: 10px; padding-right:10px" class="nav-items" href="#home">home</a><br>
+        <a style="top:60px; left:30px; position: relative;padding-left: 10px; padding-right:10px" class="nav-items" href="#personal_info">personal info</a><br>
+        <a style="top:90px; left:30px; position: relative;padding-left: 10px; padding-right:10px" class="nav-items" href="#education">education</a><br>
+        <a style="top:120px; left:30px;position: relative;padding-left: 10px; padding-right:10px" class="nav-items" href="#projects">projects</a><br>
+        <a style="top:150px;left:30px; position: relative;padding-left: 10px; padding-right:10px" class="nav-items" href="#expericene">experience</a>
+      </div>
+    </div>
+
+    <div class="left-main">
+      <div class="in-left-main">
+        <div id="home">
+          HOLA !
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br><br>
+
+        <div id="personal_info">
+          <div style="font-size: 35px">
+            <b>About Me</b>
+          </div><br>
+          <b>Name</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Nallapaneni Sai Suprabhanu <br>
+          <b>Contact No.</b>&nbsp&nbsp&nbsp +91 9876543221 <br>
+          <b>Email</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp supra.nlpn@gmail.com <br>
+          <b>City</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Guntur <br>
+          <b>Country</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp India <br>
+          <br>
+          • 2+ years of experience designing and managing applications using Python, C, C++, Java, Server
+          and cloud services like AWS. <br>
+          • Proficient in Object-Oriented Programming (OOPS). <br>
+          • Proficient in Wireless Networks like Low Power Wide Area Networks (LPWANs), Long Range Wide
+          Area Networks (LoRaWANs) and Small World Graphs. <br>
+          • Excellent communications skills, coding skills, adaptability to new technologies, deep interest in
+          machine learning and Artificial Intelligence and willing to learn while working at different levels of
+          organization.
+        </div>
+
+        <div id="education">
+          <div style="font-size: 35px">
+            <b>Education</b>
+          </div><br>
+          <b>Scholling</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp at GCS, Graduated on May 2017 <br>
+          <b>Intermediate</b>&nbsp&nbsp at Sri Chaitanya, Graduated on Jun 2019 <br>
+          <b>Graduation</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp at SRM AP, Will be Graduated on Jul 2023 <br>
+          <br>
+          <b>Key Skills</b> <br>
+          Web/Programming : Python, C, C++, HTML, CSS <br>
+          IDE : Jupyter Notebook, NetBeans IDE 8.0, Eclipse <br>
+          Scripting : Python, JavaScript, PHP <br>
+          Database Development : Apache Server, SQL Server <br>
+          Operating Systems : Windows, MacOS <br>
+          Source Control : Github, Git <br>
+          Others : Microsoft Office
+        </div> <br><br><br>
+
+        <div id="projects">
+          <div style="font-size: 35px;">
+            <b>Projects</b>
+          </div><br>
+          <b>Academic Projects</b> <br>
+          Services Booking Web Application Feb 2021 – April 2021 <br>
+          Developer <br>
+          Description: <br>
+          This is a web application that helps the customers to book all their reliable services like gardening, house
+          maintenance such as ac service and repair, appliances, cleaning and disinfection, electricians, plumbers,
+          carpenters, kitchen cleaning, grooming services, and so on. This feature helps users save time and money
+          by eliminating the age-old process of searching for online service providers and assigning tasks to unverified
+          strangers. <br>
+          Role: <br>
+          • Developed a very user friendly interface using HTML 5, CSS 3 and Java Script. <br>
+          • Used SQL, Xampp and Apache servers for the backend. <br>
+          • Connected the frontend with backend using PHP. <br>
+          <br>
+          <b>Workshops and Seminars</b> <br>
+          Research Day 2021 at SRM University AP: Jan 2021 <br>
+          • Presented Research Problem and Algorithm. <br>
+          • Gone through various presentations and research problems. <br>
+          <br>
+          Vodafone Program - AI and ML Workshop 2021: Mar 2021 <br>
+          • Understood the Basics of Artificial Intelligence. <br>
+          • Understood concepts of Machine learning and algorithms <br>
+          • Understood uses of Python for Machine Learning and Deep Learning <br>
+          <br>
+          <b>Hackathons</b> <br>
+          Maverick 2.0 Hack-a-thon by AB InBev Feb 2021 <br>
+          Uber HackTag by Uber Technologies Mar 2021
+        </div>
+
+        <div id="expericene">
+          <div style="font-size: 35px;">
+            <b>Expericence</b>
+          </div><br>
+          <b>
+          SRM AP IoT Lab,Guntur, AP, India |Dec 2020– Present
+          Research Assistant</b> <br>
+          Description: <br>
+          SRM’s IoT lab is one of the best research facilities in India. The lab primarily works on various research
+          problems relating to Sensor devices, Wireless Networks and many more. I was working with one the most
+          experienced and intellectual professors Dr. Om Jee Pandey on Small World LPWANs. <br>
+          <br>
+          Role:<br>
+          • Currently working on “Improving Energy Efficiency and QoS over Small World LPWANs for IoT
+          Applications”. <br>
+          • Achieved the Small World Characteristics (first stage result) i.e. reduced Average Path Length and
+          constant or increased Clustering Coefficient. <br>
+          • Presented the Algorithm at Research Day 2021 at SRM AP.
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
