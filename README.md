@@ -1,4 +1,4 @@
 # my-port
 
 my portfolio site - 
-https://supra-atkinson.github.io/my-port/
+https://supra-nlpn.github.io/my-port/
