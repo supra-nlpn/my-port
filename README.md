@@ -1,4 +1,4 @@
 # my-port
 
-my portfolio site - 
+my portfolio page - 
 https://supra-nlpn.github.io/my-port/
