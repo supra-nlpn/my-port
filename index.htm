@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sai Nallapaneni | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- NEW -->
+  <title>SSN | Portfolio</title>
   <link rel="icon" href="my_port_icon.PNG" type="image/png" />
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet" />
   <style>
@@ -65,49 +65,150 @@
     }
     .sub-info {
       font-size: 0.9rem;
-      color: #f0f0f0; /* slightly transparent white */
+      color: #f0f0f0;
     }
-    .card{
+    .card {
         background: #161b22; 
         border-radius: 12px; 
         border: 2px solid #30363d; 
         padding: 1.5rem; 
-        display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap;
+        display: flex; 
+        gap: 1.5rem; 
+        align-items: flex-start; 
+        flex-wrap: wrap;
     }
 
-.card-experience {
-  background: #161b22;
-  border-radius: 12px;
-  border: 2px solid #30363d;
-  padding: 1.5rem 1.8rem;
-  margin: 2rem auto;
-  max-width: 850px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
-}
+    .card-experience {
+      background: #161b22;
+      border-radius: 12px;
+      border: 2px solid #30363d;
+      padding: 1.5rem 1.8rem;
+      margin: 2rem auto;
+      max-width: 850px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    }
 
-.card-experience h3 {
-  margin: 1.2rem 0 0.5rem;
-  font-size: 1.15rem;
-  color: #ff6a00;
-}
+    .card-experience h3 {
+      margin: 1.2rem 0 0.5rem;
+      font-size: 1.15rem;
+      color: #ff6a00;
+    }
 
-.card-experience ul {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  padding-left: 1.2rem;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
+    .card-experience ul {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      padding-left: 1.2rem;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
 
-.card-experience ul li {
-  margin-bottom: 0.3rem;
-  list-style-type: disc;
-}
+    .card-experience ul li {
+      margin-bottom: 0.3rem;
+      list-style-type: disc;
+    }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #161b22;
+      border-bottom: 2px solid #30363d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      padding: 0.8rem 0;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      flex-wrap: wrap; /* NEW */
+    }
+    .navbar a {
+      color: #00ccff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.08rem;
+      padding: 0.3rem 0.8rem;
+      border-radius: 6px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .navbar a:hover, .navbar a:focus {
+      background: #23272e;
+      color: #ff6a00;
+    }
+    
+
+    /* NEW - Responsive Typography and Layout */
+    @media (max-width: 768px) { /* NEW */
+      body { /* NEW */
+        padding: 2rem 1rem; /* NEW */
+      } /* NEW */
+      h1 { /* NEW */
+        font-size: 1.8rem; /* NEW */
+      } /* NEW */
+      h2 { /* NEW */
+        font-size: 1.4rem; /* NEW */
+      } /* NEW */
+      .navbar { /* NEW */
+        gap: 1rem; /* NEW */
+      } /* NEW */
+      section#about { /* NEW */
+        flex-direction: column; /* NEW */
+        align-items: center; /* NEW */
+        text-align: center; /* NEW */
+      } /* NEW */
+      section#about div:first-child { /* NEW */
+        min-width: unset; /* NEW */
+      } /* NEW */
+      section#about img { /* NEW */
+        margin-top: 1rem; /* NEW */
+      } /* NEW */
+      .card ul { /* NEW */
+        display: flex; /* NEW */
+        flex-wrap: wrap; /* NEW */
+        gap: 0.5rem; /* NEW */
+      } /* NEW */
+      .card ul li { /* NEW */
+        width: 100%; /* NEW */
+      } /* NEW */
+    } /* NEW */
+
+    @media (max-width: 480px) { /* NEW */
+      h1 { /* NEW */
+        font-size: 1.5rem; /* NEW */
+      } /* NEW */
+      h2 { /* NEW */
+        font-size: 1.2rem; /* NEW */
+      } /* NEW */
+      .navbar a { /* NEW */
+        font-size: 0.9rem; /* NEW */
+        padding: 0.3rem 0.5rem; /* NEW */
+      } /* NEW */
+      section#education ul { /* NEW */
+        columns: 1 !important; /* NEW */
+      } /* NEW */
+    } /* NEW */
+
+    /* Add scroll-margin to all major sections for navbar offset */
+    section {
+      scroll-margin-top: 80px; /* Adjust if your navbar height changes */
+      margin-bottom: 4rem;
+    }
   </style>
 </head>
 <body>
-<section id="intro" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+  <nav class="navbar">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#publications">Publications</a>
+  </nav>
+<section id="about" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
   <div style="flex: 1; min-width: 280px;">
         <h1>Sai Suprabhanu Nallapaneni</h1>
         
@@ -126,9 +227,12 @@
             </a>
         </div>
         <p style="text-align: justify; line-height: 1.6;">
-            I love building impactful solutions at the intersection of Cloud Infrastructure, Distributed Systems, Computer Architecture, and Artificial Intelligence.
-            I’ve developed a strong foundation through my academic journey and hands-on experience interning at startups, where I continuously honed my skills and 
-            embraced new challenges. Actively engaged in multiple research projects, including those funded by leading organizations like Intel and SRC.
+            I love building impactful solutions at the intersection of Cloud Infrastructure, Distributed Systems,
+             Computer Architecture, and Artificial Intelligence. Through my academic background and internships at tech startups, 
+             I’ve built a solid foundation and gained hands-on experience while continuously learning and taking on new challenges. 
+             I’ve also been actively involved in several research projects, including ones funded by leading organizations like Intel
+              and SRC. In addition to my technical experience, I’ve worked in customer-facing roles such as a Store Associate and 
+            in Operations and IT Support, where I developed strong communication, problem-solving, and customer interaction skills.
         </p>
     </div>
   <div style="flex-shrink: 0;">
@@ -198,25 +302,42 @@
 
 <section id="education">
   <h2>Education</h2>
-  <div class="card">
-    <div style="flex-shrink: 0;">
+  <div class="card" style="display: block; padding: 1.5rem;">
+    <!-- UF Block -->
+    <div style="display: flex; gap: 1.2rem; align-items: flex-start; margin-bottom: 2rem;">
       <img src="https://brandcenter.ufl.edu/wp-content/uploads/sites/57/2024/06/NEW-IMAGES_The-University-Seal_The-University-Seal-1-2-768x768-1.png" alt="UF Logo" width="80" style="border-radius: 8px;" />
+      <div>
+        <h3 style="margin: 0;">University of Florida <span class="sub-info"> – Gainesville, FL</span></h3>
+        <p style="margin: 0.5rem 0;">
+          <strong>Master of Science in Computer Science</strong><br>
+          GPA: 3.9 / 4.0
+        </p>
+        <h4 style="margin-top: 1rem;">Core Courses: </h4>
+        <ul style="columns: 2; list-style: square inside; padding-left: 1rem;">
+          <li>Distributed Systems</li>
+          <li>Computer Architecture</li>
+          <li>Embedded Systems</li>
+          <li>Natural Language Processing</li>
+        </ul>
+      </div>
     </div>
-    <div style="flex: 1; min-width: 250px;">
-      <h3 style="margin: 0;">University of Florida <span class="sub-info"> – Gainesville, FL</span></h3>
-      <p style="margin: 0.5rem 0;">
-        <strong>Master of Science in Computer Science</strong><br>
-        GPA: 3.9 / 4.0
-      </p>
-      <h4 style="margin-top: 1rem;">Core Courses: </h4>
-      <ul style="columns: 2; list-style: square inside; padding-left: 1rem;">
-        <li>Distributed Operating Systems</li>
-        <li>Computer Architecture</li>
-        <li>Embedded Systems</li>
-        <li>Data Engineering</li>
-        <li>Natural Language Processing</li>
-        <li>Advanced Data Structures</li>
-      </ul>
+    <!-- SRM Block -->
+    <div style="display: flex; gap: 1.2rem; align-items: flex-start;">
+      <img src="https://media.licdn.com/dms/image/v2/C4D0BAQFVkDMh7oXtqw/company-logo_200_200/company-logo_200_200/0/1631373402802?e=2147483647&v=beta&t=xZEpb0D0pUULkKjCJhgWDYfC6bkZvoRy3D8-bBV2k64" alt="SRM Logo" width="80" style="border-radius: 8px;" />
+      <div>
+        <h3 style="margin: 0;">SRM University <span class="sub-info"> – Amaravati, AP</span></h3>
+        <p style="margin: 0.5rem 0;">
+          <strong>Bachelor of Technology in Computer Science & Engineering</strong><br>
+          GPA: 9.2 / 10.0
+        </p>
+        <h4 style="margin-top: 1rem;">Core Courses: </h4>
+        <ul style="columns: 2; list-style: square inside; padding-left: 1rem;">
+          <li>Computer Networks</li>
+          <li>Compiler Design</li>
+          <li>Web Technologies</li>
+          <li>Database Management Systems</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -240,17 +361,29 @@
     
     <h2>Experience</h2>
     <div class="card-experience">
-    <h3>Researcher – UF Embedded Systems Lab</h3>
+    <h3>Researcher – UF HWCOE</h3>
     <ul>
-      <li>Developed symbolic execution test harness for chip-level hardware validation.</li>
+      <li>Developed fuzzing symbolic execution test harness for chip-level hardware validation.</li>
       <li>Containerized test workflows with Docker for cross-platform reproducibility.</li>
-      <li>Collaborated with Intel, published a paper, and filed a patent.</li>
+      <li>Collaborated with <a style="color:rgb(90, 90, 240); text-decoration: none" href="https://www.src.org/">SRC</a>, published a paper, and filed a patent.</li>
     </ul>
     <h3>Graduate Teaching Assistant – UF CISE</h3>
     <ul>
       <li>TA for Software Engineering & Distributed Systems.</li>
       <li>Guided 200+ students in scalable architecture & agile development.</li>
       <li>Helped build full-stack apps using React, Node.js, MongoDB.</li>
+    </ul>
+    <h3>Operations Associate – UF RecSports</h3>
+    <ul>
+      <li>Managed daily operations across multiple RecSports facilities.</li>
+      <li>Coordinated with staff to maintain safety standards and optimize operational efficiency for patrons.</li>
+      <li>Provided on-call technical support for inventory management software.</li>
+    </ul>
+    <h3>Store Associate – Shake Smart</h3>
+    <ul>
+      <li>Managed daily store operations, including cashiering, beverage preparation, and dishwashing.</li>
+      <li>Delivered excellent customer service through clear and professional communication.</li>
+      <li>Troubleshot and resolved technical issues, including billing systems, PoS machines, and display devices.</li>
     </ul>
     <h3>Web Developer – Bluepad Tech</h3>
     <ul>
@@ -266,7 +399,7 @@
     <div class="card-experience">
     <h3>FuSS: Coverage-Directed Hardware Fuzzing with Selective Symbolic Execution</h3>
     <p>ACM Transactions on Embedded Computing Systems (TECS), 2025
-       <a style="color:rgb(90, 90, 240)" href="" target="_blank">Read Paper</a></p>
+       <a style="color:rgb(90, 90, 240)" href="https://www.cise.ufl.edu/research/cad/Publications/tecs25.pdf" target="_blank">Read Paper</a></p>
     <h3>A Comprehensive Analysis of Real-World Image Captioning and Scene Identification</h3>
     <p>JEEE, 2023 Volume 2 | Issue 3 | 307-316;   DOI: 10.33140/JEEE.02.03.14. 
        <a style="color:rgb(90, 90, 240)" href="https://arxiv.org/abs/2308.02833" target="_blank">Read Paper</a></p>
